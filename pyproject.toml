@@ -1,0 +1,22 @@
+[project]
+name = "plotterpaint"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "gscrib>=1.2.0",
+    "pygdk",
+    "pyside6>=6.12.0",
+    "svgpathtools>=1.8.0",
+]
+
+[project.scripts]
+plotterpaint = "plotterpaint:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv.sources]
+pygdk = { git = "https://github.com/cilynx/pygdk" }

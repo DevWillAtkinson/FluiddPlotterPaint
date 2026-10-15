@@ -1,0 +1,11 @@
+{
+  "brand":"crayola",
+  "number":8,
+  "colors":[
+    {
+      "color":"RED",
+      "hex": "ff0000",
+      "position": [0,0]
+    }
+  ]
+}

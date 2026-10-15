@@ -1,0 +1,35 @@
+{
+  "Name": "paintPlotter",
+  "Controller": {
+    "Flavor": "Fluidd",
+    "Hostname / IP": "172.0.0.1",
+    "API Key": ""
+  },
+  "Max Feed Rate (mm/min)": 5000,
+  "Nozzle Diameter": 0.4,
+  "Retraction": 8,
+  "Extra Push": 1,
+  "Bowden Length": 900,
+  "Tool Table": "colors.json",
+  "Plotter": {
+    "Magazine": [
+      ["","Light Blue","Lime",""],
+      ["Black","Red","Blue","Orange"]
+    ],
+    "Slot Zero": [806,33],
+    "Pen Spacing": 13.7,
+    "Z-Touch": -123,
+    "Z-Click": -88,
+    "Z-Stage": -110
+  },
+  "Start G-Code": [
+    ["G28", "Go home"],
+    ["M82", "Use absolute extrusion"],
+    ["G92 E0", "Zero E"]
+  ],
+  "End G-Code": [
+    ["M104 S0", "Turn off heaters"],
+    ["G28", "Go home"],
+    ["M84", "Disable motors"]
+  ]
+}
