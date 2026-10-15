@@ -1,7 +1,7 @@
 from plotterpaint.widgets.canvasWidget import canvasWidget
 from plotterpaint.widgets.toolboxWidget import toolboxWidget
 
-from PySide6.QtWidgets import (QMainWindow, QHBoxLayout, QMenu, QMenuBar, QWidget)
+from PySide6.QtWidgets import (QMainWindow, QMenu, QMenuBar)
 
 class Window(QMainWindow):
     def __init__(self):
